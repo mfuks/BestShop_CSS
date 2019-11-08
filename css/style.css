@@ -12,23 +12,29 @@
     --color-aside3: #A5A5A5;
     --color-blackopacity: #00000029;
 }
+html
+{
+    font-size: 16px;
+}
 .cont
 {
     width: 1352px;
 }
+/* section 1 */
 header
 {
-    height: 70px;
-    background-color: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: var(--color-white);
     box-shadow: 0 3px 6px var(--color-blackopacity);
+    position: fixed;
+    top: 0;
 }
-
-header div
+header div.cont
 {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,22 +43,23 @@ header div
 .cont-logo
 {
     font-family: var(--font-Raleway);
-    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 300;
     color: var(--color-main1);
 }
 ul
 {
+    list-style-type: none;
     display: flex;
     justify-content: center;;
     align-items: center;
-    list-style-type: none;
 }
 li
 {
     font-family: var(--font-Sans);
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 3.28px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.21rem;
     text-transform: uppercase;
     text-align: center;
     padding-left: 50px;
@@ -67,7 +74,51 @@ li a:hover
     color: var(--color-black);
     border-bottom: 5px solid var(--color-main1);
     padding-bottom: 22.5px;
-    line-height: 11px;
-
 }
-
+/* section 2 */
+.banner
+{
+    width: 100%;
+    height: calc(100vh - 208px); /* 100vh - header h - margin-top h*/
+    background: url("../image/Background.png") bottom/contain no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 138px 0 0 0;
+}
+.banner a, .banner p, .cont-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+h1 a
+{   font-family: var(--font-Raleway);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--color-black);
+    text-decoration: none;
+}
+.banner p
+{
+    font-family: var(--font-Sans);
+    margin-bottom: 2.4rem;
+    margin-top: 1.3rem;
+}
+.cont-button-1
+{
+    width: 27.5rem;
+    height: 4.2rem;
+    background-color: var(--color-main1);
+    border-radius: calc(4.2rem / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-button-1 a
+{
+    font-family: var(--font-Sans);
+    color: var(--color-white);
+    font-weight: 700;
+    text-decoration: none;
+}

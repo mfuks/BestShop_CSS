@@ -20,7 +20,7 @@ html
 {
     width: 1352px;
 }
-/* section 1 */
+/* section 1 - header */
 header
 {
     display: flex;
@@ -75,7 +75,7 @@ li a:hover
     border-bottom: 5px solid var(--color-main1);
     padding-bottom: 22.5px;
 }
-/* section 2 */
+/* section 2 - banner */
 .banner
 {
     width: 100%;
@@ -122,3 +122,105 @@ h1 a
     font-weight: 700;
     text-decoration: none;
 }
+/* section 3 - popularPlatform */
+.popularPlatform
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-header
+{
+    font-family: var(--font-Raleway);
+    font-size: 2.3rem;
+    color: var(--color-black);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 0;
+}
+.cont-info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-info-elements
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.cont-info-elements-text
+{
+    height: 5.6rem;
+    width: 11rem;
+    text-align: center;
+    padding: 10px 25px;
+    font-family: var(--font-Raleway);
+}
+.cont-info-elements-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.8rem;
+    width: 11rem;
+    position: relative;
+    left: 10%;
+    z-index: 1;
+}
+.cont-info p:not(.paragraph-bold)
+{
+    color: var(--color-aside3)
+}
+.paragraph-bold
+{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-black);
+    letter-spacing: 0.3rem;
+    padding-bottom: 10px;
+}
+
+.dot1::before
+{
+    content: "";
+    display: block;
+    height: 63px;
+    width: 63px;
+    background-color: var(--color-main2);
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+.dot2::before
+{
+    content: "";
+    display: block;
+    height: 63px;
+    width: 63px;
+    background-color: var(--color-main1);
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+.dot3::before
+{
+    content: "";
+    display: block;
+    height: 63px;
+    width: 63px;
+    background-color: var(--color-main3);
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+

@@ -4,14 +4,16 @@
     --font-Sans: 'Open Sans', sans-serif;
     --color-main1: #08A6E4;
     --color-main2: #FB3B64;
+    --color-main1opacity: #08A6E450;
     --color-main3: #55DFB4;
     --color-black: #000;
+    --color-blackopacity: #00000030;
     --color-white: #fff;
     --color-aside1: #707070;
     --color-aside2: #95989A;
     --color-aside3: #A5A5A5;
-    --color-blackopacity: #00000029;
     --color-background1: #F7F7F7;
+
 }
 html
 {
@@ -20,6 +22,13 @@ html
 .cont
 {
     width: 1352px;
+}
+h2
+{
+    font-family: var(--font-Raleway);
+    font-size: 2.3rem;
+    color: var(--color-black);
+    padding-bottom: 30px;
 }
 /* section 1 - header */
 header
@@ -49,14 +58,14 @@ header div.cont
     font-weight: 300;
     color: var(--color-main1);
 }
-ul
+header ul
 {
     list-style-type: none;
     display: flex;
     justify-content: center;;
     align-items: center;
 }
-li
+header li
 {
     font-family: var(--font-Sans);
     font-size: 0.7rem;
@@ -66,12 +75,12 @@ li
     text-align: center;
     padding-left: 50px;
 }
-li a
+header li a
 {
     text-decoration: none;
     color: var(--color-aside3);
 }
-li a:hover
+header li a:hover
 {
     color: var(--color-black);
     border-bottom: 5px solid var(--color-main1);
@@ -235,13 +244,6 @@ h1 a
 {
     margin: 106px 0;
 }
-.benefits h2
-{
-    font-family: var(--font-Raleway);
-    font-size: 2.3rem;
-    color: var(--color-black);
-    padding-bottom: 30px;
-}
 .cont-img
 {
     width: 50%;
@@ -379,4 +381,128 @@ h1 a
     font-family: var(--font-Sans);
     border-bottom: 5px solid var(--color-main3);
     padding-bottom: 35px;
+}
+/* section 5 - prices*/
+.pricing
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 95px;
+}
+.pricing h2
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 106px;
+    padding-bottom: 50px;
+}
+.packages
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.packages-basic,
+.packages-professional,
+.packages-premium
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pricing h3
+{
+    font-family: var(--font-Raleway);
+    font-weight: 700;
+    color: var(--color-black);
+}
+.packages-price
+{
+    font-family: var(--font-Sans);
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 15px;
+}
+.pricing p:not(.packages-price)
+{
+    font-family: var(--font-Raleway);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-black);
+}
+.pricing ul
+{
+    font-family: var(--font-Sans);
+    font-size: 0.9rem;
+    text-align: center;
+    list-style-image: url("../image/Ckechmark-1.svg");
+    list-style-position: inside;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.packages-basic li:last-child,
+.packages-basic li:nth-last-child(2),
+.packages-professional li:last-child
+{
+    list-style-image: url("../image/Close.svg");
+}
+.pricing a
+{
+    font-family: var(--font-Sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--color-white);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    position: relative;
+    top: 25px;
+}
+.package
+{
+    height: 460px;
+    width: 370px;
+    border-radius: 18px;
+    padding-top: 40px;
+    position: relative;
+}
+.packages-basic
+{
+    border: 2px solid var(--color-main2);
+}
+.packages-professional
+{
+    height: 500px;
+    width: 405px;
+    border: 2px solid var(--color-main1);
+    box-shadow: 0 0 30px var(--color-main1opacity);
+}
+.packages-premium
+{
+    border: 2px solid var(--color-main3);
+}
+.packages-basic a
+{
+    background-color: var(--color-main2);
+}
+.packages-professional a
+{
+    background-color: var(--color-main1);
+    box-shadow: 0 5px 15px var(--color-main1opacity);;
+}
+.packages-premium a
+{
+    background-color: var(--color-main3);
 }

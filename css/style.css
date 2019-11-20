@@ -515,16 +515,21 @@ h1
     background-color: var(--color-main3);
 }
 /* section 6 - questions */
+.questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .questions .cont
 {
+    padding: 0 0 50px 0;
     display: flex;
-    align-items: flex-start;
-    padding: 0 160px 50px 160px;
 }
-.div-questions
+.div-questions1,
+.div-questions2
 {
     flex: 1 1 0;
-    padding-bottom: 50px;
+    padding: 0 80px 50px 80px;
 }
 .questions p
 {
@@ -616,4 +621,35 @@ h1
     margin: 5px;
     position: absolute;
     top: 140px;
+}
+/* section 7 - footer*/
+.footer
+{
+    height: 90px;
+    background-color: var(--color-white);
+    box-shadow: 0 -5px 40px var(--color-blackopacity);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .cont
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .left > p
+{
+    font-family: var(--font-Sans);
+    font-size: 0.7rem;
+    color: var(--color-aside3);
+}
+.footer .cont-logo
+{
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+}
+img
+{
+    padding-left: 20px;
 }

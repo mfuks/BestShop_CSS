@@ -91,7 +91,7 @@ header li a:hover
 /* section 2 - banner */
 .banner
 {
-    height: calc(100vh - 208px); /* 100vh - header h - margin-top h*/
+    height: calc(100vh - 137px); /* 100vh - header h - margin-top h*/
     width: 100%;
     background: url("../image/Background.png") bottom/contain no-repeat;
     display: flex;
